@@ -3,8 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85AE6C40-9307-400A-9751-7C12D44D0F56}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85AE6C40-9307-400A-9751-7C12D44D0F56}|Ultimate Tamagochi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\ultimate tamagochi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:ultimate tamagochi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\enums\\type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\enums\\type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\enums\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\enums\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\interfaces\\isleep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\interfaces\\isleep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\items\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\items\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\items\\special.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\items\\special.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\items\\toy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\items\\toy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\interfaces\\ieat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\interfaces\\ieat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\pets\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\pets\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\pets\\chick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\pets\\chick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\pets\\cat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\pets\\cat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|c:\\users\\isard\\desktop\\programaci\u00F3\\poo\\ultimate tamagochi\\model\\interfaces\\iplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886CB1FB-B4F1-63AB-1EE7-A46CA4D1985A}|Ultimate Tamagochi.csproj|solutionrelative:model\\interfaces\\iplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,21 +78,229 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 15,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Special.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Items\\Special.cs",
+              "RelativeDocumentMoniker": "Model\\Items\\Special.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Items\\Special.cs",
+              "RelativeToolTip": "Model\\Items\\Special.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T12:03:26.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Toy.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Items\\Toy.cs",
+              "RelativeDocumentMoniker": "Model\\Items\\Toy.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Items\\Toy.cs",
+              "RelativeToolTip": "Model\\Items\\Toy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T12:03:33.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Food.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Items\\Food.cs",
+              "RelativeDocumentMoniker": "Model\\Items\\Food.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Items\\Food.cs",
+              "RelativeToolTip": "Model\\Items\\Food.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T12:03:04.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Item.cs",
+              "RelativeDocumentMoniker": "Model\\Item.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Item.cs",
+              "RelativeToolTip": "Model\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T12:02:42.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Type.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Enums\\Type.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\Type.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Enums\\Type.cs",
+              "RelativeToolTip": "Model\\Enums\\Type.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T12:01:24.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "State.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Enums\\State.cs",
+              "RelativeDocumentMoniker": "Model\\Enums\\State.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Enums\\State.cs",
+              "RelativeToolTip": "Model\\Enums\\State.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T12:01:07.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ISleep.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Interfaces\\ISleep.cs",
+              "RelativeDocumentMoniker": "Model\\Interfaces\\ISleep.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Interfaces\\ISleep.cs",
+              "RelativeToolTip": "Model\\Interfaces\\ISleep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T11:43:39.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IPlay.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Interfaces\\IPlay.cs",
+              "RelativeDocumentMoniker": "Model\\Interfaces\\IPlay.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Interfaces\\IPlay.cs",
+              "RelativeToolTip": "Model\\Interfaces\\IPlay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T11:43:29.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IEat.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Interfaces\\IEat.cs",
+              "RelativeDocumentMoniker": "Model\\Interfaces\\IEat.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Interfaces\\IEat.cs",
+              "RelativeToolTip": "Model\\Interfaces\\IEat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T11:43:19.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Chick.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Pets\\Chick.cs",
+              "RelativeDocumentMoniker": "Model\\Pets\\Chick.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Pets\\Chick.cs",
+              "RelativeToolTip": "Model\\Pets\\Chick.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T11:42:11.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dog.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Pets\\Dog.cs",
+              "RelativeDocumentMoniker": "Model\\Pets\\Dog.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Pets\\Dog.cs",
+              "RelativeToolTip": "Model\\Pets\\Dog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T11:42:04.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Cat.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Pets\\Cat.cs",
+              "RelativeDocumentMoniker": "Model\\Pets\\Cat.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Pets\\Cat.cs",
+              "RelativeToolTip": "Model\\Pets\\Cat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T11:41:58.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Stats.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Stats.cs",
+              "RelativeDocumentMoniker": "Model\\Stats.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Stats.cs",
+              "RelativeToolTip": "Model\\Stats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T11:40:32.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Pet.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Pet.cs",
+              "RelativeDocumentMoniker": "Model\\Pet.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Pet.cs",
+              "RelativeToolTip": "Model\\Pet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T11:40:09.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Player.cs",
+              "RelativeDocumentMoniker": "Model\\Player.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Model\\Player.cs",
+              "RelativeToolTip": "Model\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T11:39:31.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ultimate Tamagochi",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Ultimate Tamagochi.csproj",
+              "RelativeDocumentMoniker": "Ultimate Tamagochi.csproj",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Ultimate Tamagochi.csproj",
+              "RelativeToolTip": "Ultimate Tamagochi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-24T11:38:56.055Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Core\\Program.cs",
+              "RelativeDocumentMoniker": "Core\\Program.cs",
+              "ToolTip": "C:\\Users\\isard\\Desktop\\Programaci\u00F3\\POO\\Ultimate Tamagochi\\Core\\Program.cs",
+              "RelativeToolTip": "Core\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-20T12:35:05.204Z",
               "EditorCaption": ""
