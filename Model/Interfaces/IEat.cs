@@ -6,5 +6,9 @@ namespace Ultimate_Tamagochi.Model.Interfaces
 {
     public interface IEat
     {
+        public void Eat(Item item) 
+        { 
+        
+        }
     }
 }

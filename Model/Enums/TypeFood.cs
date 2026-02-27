@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Ultimate_Tamagochi.Model.Enums
 {
-    public enum Type
+    public enum TypeFood
     {
+        Meal,
+        Snack,
+        Poison
     }
 }

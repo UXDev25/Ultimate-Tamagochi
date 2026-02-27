@@ -6,5 +6,9 @@ namespace Ultimate_Tamagochi.Model.Interfaces
 {
     internal interface IPlay
     {
+        public void Play(Item item) 
+        { 
+        
+        }
     }
 }

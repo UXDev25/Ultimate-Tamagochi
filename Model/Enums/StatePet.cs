@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Ultimate_Tamagochi.Model.Enums
 {
-    public enum State
+    public enum StatePet
     {
+        Happy,
+        Sad,
+        Angry,
+        Tired,
+        Sick,
+        Dead
     }
 }
