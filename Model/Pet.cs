@@ -11,6 +11,6 @@ namespace Ultimate_Tamagochi.Models
         public StatePet State { get; set; }
         public bool IsAlive { get; set; }
         public Stats Stats { get; set; }
-        public DateTime BirthDate { get => DateTime.Today; }
+        public DateOnly BirthDate => DateOnly.FromDateTime(DateTime.Now);
     }
 }

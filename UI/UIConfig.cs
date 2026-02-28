@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Ultimate_Tamagochi.Model;
 using Ultimate_Tamagochi.Model.Enums;
+using Ultimate_Tamagochi.Models;
 
 namespace Ultimate_Tamagochi.UI
 {
@@ -12,6 +13,7 @@ namespace Ultimate_Tamagochi.UI
         {
             public const StatePet _defPetState = (StatePet)0;
             public const bool _defPetAlive = true;
+            public const int _defMaxStat = 100;
         }
 
         public static class Pets
@@ -23,25 +25,28 @@ namespace Ultimate_Tamagochi.UI
 
         public static class AsciiDrawings 
         {
-            public const string Header = "\"╔════════════════════════════════╗\\r\\n\" +" +
-                "\r\n                \"║           TAMAGOCHI            ║\\r\\n\" +" +
-                "\r\n                \"║    DateOfBirth: {0}     ║\\r\\n\" +" +
-                "\r\n                \"║       Type: {1}                ║\\r\\n\" +" +
-                "\r\n                \"╚════════════════════════════════╝\"";
+            public const string Header = "╔════════════════════════════════╗\r\n" +
+                "║          TAMAGOTCHI            ║\r\n" +
+                "║    DateOfBirth: {0}     ║\r\n" +
+                "║       Type: {1}                ║\r\n" +
+                "╚════════════════════════════════╝";
             public const string Tamagochi = "      /\\_/\\      \r\n" +
                 "     ( {0} )     \r\n" +
                 "     /       \\    \r\n" +
                 "    |         |   \r\n" +
                 "     \\__/\\___/    ";
+            //Faces
         }
 
         public static class InGameUIElements 
         {
             public const string Name = "Name: {0}";
-            public const string EmotionalState = "EmotionalState: {0}";
-            public const string HungerStat = "Hunger:[{0}] {1}";
-            public const string EnergyStat = "Energy:[{0}] {1}";
-            public const string HealthStat = "Health:[{0}] {1}";
+            public const string EmotionalState = "Emotional State: {0}";
+            public const string HungerStat = "Hunger: {0}";
+            public const string EnergyStat = "Energy: {0}";
+            public const string HealthStat = "Health: {0}";
+            public const string BarMold = "[{0}] {1}%";
+            public const string BarOGMold = "--------------------";
 
             public const string Divider = "-----------------------------";
             public const string Optons = "1 - Eat\n2 - Sleep\n3 - Play\n4 - Play\n5 - Exit";
