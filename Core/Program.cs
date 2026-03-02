@@ -5,6 +5,7 @@ using Ultimate_Tamagochi.Model.Items;
 using Ultimate_Tamagochi.Models;
 using Ultimate_Tamagochi.Models.Pets;
 using Ultimate_Tamagochi.UI;
+using Utils;
 
 namespace tamagochi 
 {
@@ -13,22 +14,44 @@ namespace tamagochi
         public static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            string? responseType;
-            Cat cat = new Cat("Caillou", new Stats(0, 100, 4));
-            Player me = new Player(cat);
+            int responseType = 0;
+            string petName = "";
 
             Toy ball = new Toy("Ball", 100, false, 20);
             Food hamburger = new Food("Hamburger", 100, false, (TypeFood)1);
             Special knife = new Special("Knife", 100, false, (EffectItem)0);
 
 
-            Draw(cat);
+            //------MAIN PROGRAM-----
             Console.WriteLine(UIConfig.Messages.WelcomeMsg);
             Console.WriteLine(UIConfig.Messages.Pet);
             Console.WriteLine(UIConfig.Messages.PetList);
-            responseType = Console.ReadLine();
+            Tools.CheckInt(ref responseType, UIConfig.Prompt._minPetOptions, UIConfig.Prompt._maxPetOptions, UIConfig.Messages.ErrorPetList);
+            Console.Clear();
+            Console.WriteLine(UIConfig.Messages.NameAsk, UIConfig.Prompt._defMaxNameChar);
+            Tools.CheckName(ref petName, UIConfig.Prompt._defMaxNameChar, UIConfig.Messages.ErrorName);
+            SelectPet(responseType, petName);
+            Player player = new(SelectPet(responseType, petName));
+            Console.Clear();
+
+            //--START
+            Draw(player.OwnPet);
         }
-        public static void Draw(Pet pet) 
+
+        //FUNCTIONALITY
+        private static Pet SelectPet( int response, string name) 
+        {
+            switch (response) 
+            {
+                case 1: return new Cat(name, new Stats());
+                case 2: return new Dog(name, new Stats());
+                case 3: return new Chick(name, new Stats());
+                default: return new Cat(name, new Stats());
+            }
+        }
+
+        //UI MANAGEMENT
+        private static void Draw(Pet pet) 
         {
             Console.Write(UIConfig.AsciiDrawings.Header, pet.BirthDate, pet.GetType().Name);
             Console.WriteLine();

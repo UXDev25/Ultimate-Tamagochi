@@ -11,9 +11,14 @@ namespace Ultimate_Tamagochi.UI
     {
         public static class Prompt
         {
+            //UI
+            public const int _defMaxNameChar = 12;
+
             //Pet
             public const StatePet _defPetState = (StatePet)0;
             public const bool _defPetAlive = true;
+            public const int _maxPetOptions = 3;
+            public const int _minPetOptions = 1;
 
             //Stats
             public const int _defMaxStat = 100;
@@ -80,10 +85,10 @@ namespace Ultimate_Tamagochi.UI
             //General
             public const string WelcomeMsg = "------------WELCOME TO ULTIMATE TAMAGOCHI------------";
             public const string Pet = "Congratulations! You are the owner of a new pet! What kind of pet do you want? (NUMBER: 1 TO 3)";
-            public const string PetList = $"- 1:{Pets.Pet1}\n-- 2:{Pets.Pet1}\n- 3:{Pets.Pet3}";
+            public const string PetList = $"- 1:{Pets.Pet1}\n- 2:{Pets.Pet1}\n- 3:{Pets.Pet3}";
             public const string ErrorPetList = "Insert a pet from the list please";
             public const string NameAsk = "Great! What is their name? (LIMIT: 12 CHARACTERS)";
-            public const string ErrorName = "Invalid name, please try again (remember the limit of characters is 12)";
+            public const string ErrorName = "Invalid name, please try again (remember the limit of characters is {0})";
 
             //Player/Inventory
             public const string ItemNotFound = "{0} not found on your inventory";

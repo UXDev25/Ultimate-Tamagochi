@@ -8,7 +8,7 @@ using Ultimate_Tamagochi.Model.Items;
 using Ultimate_Tamagochi.UI;
 namespace Ultimate_Tamagochi.Models.Pets
 {
-    public class Cat : Pet, IEat, IPlay, ISleep, IActions
+    public class Cat : Pet, IEat, IPlay, ISleep
     {
 
         public Cat(string name, StatePet state, bool isAlive, Stats stats) 
