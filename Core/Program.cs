@@ -1,5 +1,7 @@
 ﻿using System;
+using Ultimate_Tamagochi.Model;
 using Ultimate_Tamagochi.Model.Enums;
+using Ultimate_Tamagochi.Model.Items;
 using Ultimate_Tamagochi.Models;
 using Ultimate_Tamagochi.Models.Pets;
 using Ultimate_Tamagochi.UI;
@@ -11,15 +13,20 @@ namespace tamagochi
         public static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Stats stats = new Stats(10, 75);
             string? responseType;
-            Cat cat = new Cat("Caillou", stats);
+            Cat cat = new Cat("Caillou", new Stats(0, 100, 4));
+            Player me = new Player(cat);
+
+            Toy ball = new Toy("Ball", 100, false, 20);
+            Food hamburger = new Food("Hamburger", 100, false, (TypeFood)1);
+            Special knife = new Special("Knife", 100, false, (EffectItem)0);
+
+
             Draw(cat);
-            /*Console.WriteLine(UIConfig.Messages.WelcomeMsg);
+            Console.WriteLine(UIConfig.Messages.WelcomeMsg);
             Console.WriteLine(UIConfig.Messages.Pet);
             Console.WriteLine(UIConfig.Messages.PetList);
-            responseType = Console.ReadLine();*/
-
+            responseType = Console.ReadLine();
         }
         public static void Draw(Pet pet) 
         {

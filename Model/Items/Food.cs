@@ -7,13 +7,13 @@ namespace Ultimate_Tamagochi.Model.Items
 {
     public class Food : Item
     {
-        public TypeFood Type { get; set; }
+        public TypeFood TypeOfFood { get; set; }
         public Food(string name, float spawnChance, bool isConsumible, TypeFood type)
         {
             Name = name;
             SpawnChance = spawnChance;
             IsConsumible = isConsumible;
-            Type = type;
+            TypeOfFood = type;
         }
     }
 }

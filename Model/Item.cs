@@ -6,10 +6,9 @@ namespace Ultimate_Tamagochi.Model
 {
     public abstract class Item
     {
-        protected string Name { get; set; }
+        public string Name { get; set; }
         protected float SpawnChance { get; set; }
-        protected bool IsConsumible { get; set; }
-
+        public bool IsConsumible { get; set; }
 
     }
 }

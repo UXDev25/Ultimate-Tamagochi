@@ -11,9 +11,32 @@ namespace Ultimate_Tamagochi.UI
     {
         public static class Prompt
         {
+            //Pet
             public const StatePet _defPetState = (StatePet)0;
             public const bool _defPetAlive = true;
+
+            //Stats
             public const int _defMaxStat = 100;
+            public const int _defMinStat = 0;
+            public const int _defMaxNutr = 3;
+            public const int _defMinNutr = -5;
+
+            //Random
+            public const int _maxPercentage = 100;
+            public const int _minPercentage = 0;
+        }
+
+        public static class Values
+        {
+            public const int MealHungerValue = 50;
+            public const int SnackHungerValue = 20;
+            public const int SlEnergyIncrease = 60;
+            public const int SlHungerDecrease = 40;
+
+            //Random
+            public const int ignoreChance = 50;
+            public const int notPlayChance = 50;
+            public const int sudSleepChance = 70;
         }
 
         public static class Pets
@@ -65,6 +88,43 @@ namespace Ultimate_Tamagochi.UI
             //Player/Inventory
             public const string ItemNotFound = "{0} not found on your inventory";
             public const string ItemErased = "erased {0}";
+            public const string ItemUsed = "You used {0} on your pet";
+
+            //Pet
+
+            //-----STATES
+            public const string Sick = "{0} feels very sick... A medical intervention will be needed";
+            public const string Tired = "{0} feels tired, let them rest a little bit...";
+            public const string Angry = "{0} is so mad! Be careful...";
+            public const string Sad = "{0} feels very sad, poor {0}...";
+
+            public const string NoPlay = "{0} does not want to play...";
+            public const string SudSlept = "What? {0} slept suddenly...";
+            public const string NoResponse = "{0} doesn't care about your opinon";
+
+            //-----ITEMS
+            public const string WhichItem = "Which Item do you want to use?";
+
+            public const string NothingHappened = "Nothing happened...";
+            public const string Eat = "{0} ate a {1}, ";
+            public const string Meal = "It was awful... but {0} seems healthier!";
+            public const string Snack = "It was delicious! but {0}'s tummy is starting to ache...";
+            public const string Poison = "{0} started to uncontrollably convulsionate, oh no...";
+
+            public const string Use = "You used a {0} on {1}, ";
+            public const string Kill = "the {0} was used coldly to kill {1}, you are a monster...";
+            public const string DeleteInventory = "Oh no! suddenly {0} ran towards you and destroyed all your items!";
+            public const string Revive = "This is a miracle! {0} is now alive again!";
+            public const string FillStats = "Wow! {0} looks more energetic than ever!";
+            public const string SetAngry = "Uh oh... {0} didn't like that";
+            public const string SetSad = "Oh no, looks like {0} is very very sad...";
+            public const string SetHappy = "Yeah! {0} liked a lot that, he is happier than ever!";
+
+            //-----ACTIONS
+            public const string Sleep = "{0} went to sleep... It waked up with a lot of energy! Maybe a little breakfast will do good on them...";
+
+            public const string Play = "{0} Played with {1}, ";
+            public const string Played = "it was very epic, {0} is so happy! But very tired...";
         }
     }
 }

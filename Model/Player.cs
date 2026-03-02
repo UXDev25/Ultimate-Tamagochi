@@ -9,45 +9,45 @@ namespace Ultimate_Tamagochi.Models
     public class Player
     {
         public Pet OwnPet { get; set; }
-        public Item[] Inventory { get; set; }
+        public Inventory Inventory { get; set; }
 
-        public Player(Pet pet, Item[] inventory)
+        public Player(Pet pet)
         {
             OwnPet = pet;
-            Inventory = inventory;
+            Inventory = new Inventory(new Item[0]);
         }
 
         public void AddToInventory(Item item) 
         { 
-            Item[] auxInv = new Item[Inventory.Length + 1];
-            for (int i = 0; i <= Inventory.Length; i++)
+            Item[] auxInv = new Item[Inventory.Storage.Length + 1];
+            for (int i = 0; i <= Inventory.Storage.Length; i++)
             {
-                auxInv[i] = Inventory[i];
+                auxInv[i] = Inventory.Storage[i];
             }
-            Inventory = auxInv;
-            Inventory[Inventory.Length] = item;
+            Inventory.Storage = auxInv;
+            Inventory.Storage[Inventory.Storage.Length] = item;
         }
 
-        public void DeleteFromInventory(Item item) 
+        public void DeleteFromInventory(Item item)
         {
             bool hasFoundItem = false;
-            for (int i = 0; i < Inventory.Length; i++) 
+            for (int i = 0; i < Inventory.Storage.Length; i++)
             {
-                if (Inventory[i] == item) 
+                if (Inventory.Storage[i] == item)
                 {
-                    if (Inventory.Length == 1) 
+                    if (Inventory.Storage.Length == 1)
                     {
-                        Inventory = [];
+                        Inventory.Storage = [];
                         Console.WriteLine(UIConfig.Messages.ItemErased, item);
                         return;
                     }
-                    Item[] auxInv = new Item[Inventory.Length - 1];
-                    for (int j = 0; j < Inventory.Length; j++)
+                    Item[] auxInv = new Item[Inventory.Storage.Length - 1];
+                    for (int j = 0; j < Inventory.Storage.Length; j++)
                     {
-                        if (Inventory[j] != item && !hasFoundItem)
+                        if (Inventory.Storage[j] != item && !hasFoundItem)
                         {
-                            if (j == Inventory.Length - 1) auxInv[j - 1] = Inventory[j];
-                            else auxInv[j] = Inventory[j];
+                            if (j == Inventory.Storage.Length - 1) auxInv[j - 1] = Inventory.Storage[j];
+                            else auxInv[j] = Inventory.Storage[j];
                         }
                         else if (!hasFoundItem)
                         {
@@ -55,14 +55,14 @@ namespace Ultimate_Tamagochi.Models
                             j++;
                         }
 
-                        if (hasFoundItem) 
+                        if (hasFoundItem)
                         {
-                            if (j >= Inventory.Length) auxInv[auxInv.Length - 1] = Inventory[auxInv.Length - 2];
-                            else auxInv[j - 1] = Inventory[j];
-                        } 
+                            if (j >= Inventory.Storage.Length) auxInv[auxInv.Length - 1] = Inventory.Storage[auxInv.Length - 2];
+                            else auxInv[j - 1] = Inventory.Storage[j];
+                        }
 
                     }
-                    Inventory = auxInv;
+                    Inventory.Storage = auxInv;
                     Console.WriteLine(UIConfig.Messages.ItemErased, item);
                     return;
                 }
@@ -72,8 +72,10 @@ namespace Ultimate_Tamagochi.Models
         }
 
         public void UseItem(Item item) 
-        { 
-        
-        }
+        {
+            Console.WriteLine(UIConfig.Messages.ItemUsed, item.Name); 
+            OwnPet.HandleItemEffect(item);
+            if (item.IsConsumible) DeleteFromInventory(item);
+        } 
     }
 }
