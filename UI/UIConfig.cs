@@ -12,14 +12,16 @@ namespace Ultimate_Tamagochi.UI
         public static class Prompt
         {
             //UI
-            public const int _defMaxNameChar = 12;
+            public const int MaxNameChar = 12;
+            public const int MinOption = 1;
+            public const int MaxOption = 6; // it is made for the last option to be the EXIT option.
+            public const int _maxPetOptions = 3;
+            public const int _minPetOptions = 1;
 
             //Pet
             public const StatePet _defPetState = (StatePet)0;
             public const bool _defPetAlive = true;
-            public const int _maxPetOptions = 3;
-            public const int _minPetOptions = 1;
-
+            
             //Stats
             public const int _defMaxStat = 100;
             public const int _defMinStat = 0;
@@ -77,7 +79,9 @@ namespace Ultimate_Tamagochi.UI
             public const string BarOGMold = "--------------------";
 
             public const string Divider = "-----------------------------";
-            public const string Optons = "1 - Eat\n2 - Sleep\n3 - Play\n4 - Play\n5 - Exit";
+            public const string OptionAsk = "What would you like to do?";
+            public const string Options = $"1 - Feed\n2 - Sleep\n3 - Play\n4 - Use item\n5 - Search for items\n6 - {ExitOption}";
+            public const string ExitOption = "Exit";
         }
 
         public static class Messages
@@ -85,15 +89,18 @@ namespace Ultimate_Tamagochi.UI
             //General
             public const string WelcomeMsg = "------------WELCOME TO ULTIMATE TAMAGOCHI------------";
             public const string Pet = "Congratulations! You are the owner of a new pet! What kind of pet do you want? (NUMBER: 1 TO 3)";
-            public const string PetList = $"- 1:{Pets.Pet1}\n- 2:{Pets.Pet1}\n- 3:{Pets.Pet3}";
+            public const string PetList = $"- 1:{Pets.Pet1}\n- 2:{Pets.Pet2}\n- 3:{Pets.Pet3}";
             public const string ErrorPetList = "Insert a pet from the list please";
             public const string NameAsk = "Great! What is their name? (LIMIT: 12 CHARACTERS)";
             public const string ErrorName = "Invalid name, please try again (remember the limit of characters is {0})";
+            public const string ErrorOption = "Invalid option, please select one number from the list";
+            public const string Close = "Ok then, goodbye!";
 
             //Player/Inventory
             public const string ItemNotFound = "{0} not found on your inventory";
             public const string ItemErased = "erased {0}";
             public const string ItemUsed = "You used {0} on your pet";
+            public const string EmptyInventory = "You have no items";
 
             //Pet
 

@@ -5,9 +5,9 @@ using Ultimate_Tamagochi.Model.Items;
 
 namespace Ultimate_Tamagochi.Model.Interfaces
 {
-    internal interface IPlay
+    public interface IPlay
     {
-        public void Play(Toy toy) 
+        public void IPlay(Toy toy) 
         { 
         
         }

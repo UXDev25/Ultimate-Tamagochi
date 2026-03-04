@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Ultimate_Tamagochi.Model.Interfaces
 {
-    internal interface ISleep
+    public interface ISleep
     {
-        public void Sleep() 
+        public void ISleep() 
         { 
         
         }

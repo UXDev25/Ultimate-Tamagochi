@@ -34,19 +34,19 @@ namespace Ultimate_Tamagochi.Models.Pets
 
         //-----INTERFACES-----
 
-        public virtual void Eat(Food food) 
+        public virtual void IEat(Food food) 
         {
             if ((State == (StatePet)2 || State == (StatePet)3) && !WillAttendPlayer(State)) return;
             Console.WriteLine(UIConfig.Messages.Eat, Name, food.Name);
             HandleItemEffect(food);
         }
-        public virtual void Play(Toy toy)
+        public virtual void IPlay(Toy toy)
         {
             if (!WillAttendPlayer(State) || State == (StatePet)3) return;
             Console.WriteLine(UIConfig.Messages.Play, Name, toy.Name);
             HandleItemEffect(toy);
         }
-        public virtual void Sleep()
+        public virtual void ISleep()
         {
             if (State == (StatePet)2 && !WillAttendPlayer(State)) return;
             Console.WriteLine(UIConfig.Messages.Sleep, Name);

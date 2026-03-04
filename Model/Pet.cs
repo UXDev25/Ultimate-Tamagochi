@@ -149,29 +149,25 @@ namespace Ultimate_Tamagochi.Models
                     HandleDeathStatChanges();
                     break;
                 case (EffectItem)1:
-                    Console.WriteLine(UIConfig.Messages.DeleteInventory, Name);
-                    //this does not do anything
-                    break;
-                case (EffectItem)2:
                     Console.WriteLine(UIConfig.Messages.Revive, Name);
                     HandleRevival(special);
                     break;
-                case (EffectItem)3:
+                case (EffectItem)2:
                     Console.WriteLine(UIConfig.Messages.NothingHappened, Name);
                     break;
-                case (EffectItem)4:
+                case (EffectItem)3:
                     Console.WriteLine(UIConfig.Messages.FillStats, Name);
                     Stats.SetMaxStats();
                     break;
-                case (EffectItem)5:
+                case (EffectItem)4:
                     Console.WriteLine(UIConfig.Messages.SetAngry, Name);
                     State = (StatePet)2;
                     break;
-                case (EffectItem)6:
+                case (EffectItem)5:
                     Console.WriteLine(UIConfig.Messages.SetSad, Name);
                     State = (StatePet)1;
                     break;
-                case (EffectItem)7:
+                case (EffectItem)6:
                     Console.WriteLine(UIConfig.Messages.SetHappy, Name);
                     State = (StatePet)0;
                     break;

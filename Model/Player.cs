@@ -18,14 +18,20 @@ namespace Ultimate_Tamagochi.Models
         }
 
         public void AddToInventory(Item item) 
-        { 
+        {
             Item[] auxInv = new Item[Inventory.Storage.Length + 1];
-            for (int i = 0; i <= Inventory.Storage.Length; i++)
+            if (Inventory.Storage.Length == 0)
+            {
+                Inventory.Storage = auxInv;
+                Inventory.Storage[0] = item;
+                return;
+            }
+            for (int i = 0; i < Inventory.Storage.Length; i++)
             {
                 auxInv[i] = Inventory.Storage[i];
             }
             Inventory.Storage = auxInv;
-            Inventory.Storage[Inventory.Storage.Length] = item;
+            Inventory.Storage[Inventory.Storage.Length - 1] = item;
         }
 
         public void DeleteFromInventory(Item item)
@@ -66,9 +72,8 @@ namespace Ultimate_Tamagochi.Models
                     Console.WriteLine(UIConfig.Messages.ItemErased, item);
                     return;
                 }
-                Console.WriteLine(UIConfig.Messages.ItemNotFound, item);
-                return;
             }
+            Console.WriteLine(UIConfig.Messages.ItemNotFound, item);
         }
 
         public void UseItem(Item item) 
