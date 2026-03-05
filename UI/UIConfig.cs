@@ -31,6 +31,8 @@ namespace Ultimate_Tamagochi.UI
             //Random
             public const int _maxPercentage = 100;
             public const int _minPercentage = 0;
+            public const int _minCategoryNum = 1;
+            public const int _categoryNum = 3;
         }
 
         public static class Values
@@ -101,6 +103,7 @@ namespace Ultimate_Tamagochi.UI
             public const string ItemErased = "erased {0}";
             public const string ItemUsed = "You used {0} on your pet";
             public const string EmptyInventory = "You have no items";
+            public const string ItemFound = "You found a {0}!";
 
             //Pet
 
@@ -134,9 +137,14 @@ namespace Ultimate_Tamagochi.UI
 
             //-----ACTIONS
             public const string Sleep = "{0} went to sleep... It waked up with a lot of energy! Maybe a little breakfast will do good on them...";
-
             public const string Play = "{0} Played with {1}, ";
             public const string Played = "it was very epic, {0} is so happy! But very tired...";
+        }
+
+        public class Exceptions 
+        {
+            public const string PercentageException = "Error, the sumatory of all the item percentages of each individual array has to be equal to 100";
+            public const string ItemArrayNumException = "Error, you must assign to UIConfig.Prompt._categoryNum the same number of itemArrays categories that exist";
         }
     }
 }

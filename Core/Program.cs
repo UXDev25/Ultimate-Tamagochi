@@ -10,7 +10,7 @@ using Utils;
 
 namespace Tamagochi 
 {
-    internal static class Program
+    public static class Program
     {
         public static void Main()
         {
@@ -18,9 +18,11 @@ namespace Tamagochi
             int responseType = 0;
             string petName = "";
             int option = 0;
-            Item[] allObjectList = Array.Empty<Item>();
+            Item[] foodArray = Array.Empty<Item>();
+            Item[] toyArray = Array.Empty<Item>();
+            Item[] specialArray = Array.Empty<Item>();
 
-            ItemManager.InstantiateAllObjects();
+            ItemManager.InstantiateAllObjects(ref foodArray, ref toyArray, ref specialArray);
 
             //------MAIN PROGRAM-----
             Console.WriteLine(UIConfig.Messages.WelcomeMsg);
@@ -42,7 +44,7 @@ namespace Tamagochi
                 Console.WriteLine();
                 Tools.CheckInt(ref option, UIConfig.Prompt.MinOption, UIConfig.Prompt.MaxOption, UIConfig.Messages.ErrorOption);
                 Console.Clear();
-                SelectionManager.SelectOption(option, player);
+                SelectionManager.SelectOption(option, player, foodArray, toyArray, specialArray);
                 player.OwnPet.UpdatePetState();
             } while (option != UIConfig.Prompt.MaxOption);
             

@@ -8,7 +8,7 @@ namespace Ultimate_Tamagochi.Model.Items
     public class Food : Item
     {
         public TypeFood TypeOfFood { get; set; }
-        public Food(string name, float spawnChance, bool isConsumible, TypeFood type)
+        public Food(string name, int spawnChance, bool isConsumible, TypeFood type)
         {
             Name = name;
             SpawnChance = spawnChance;

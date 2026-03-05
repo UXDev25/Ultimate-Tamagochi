@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Tamagochi;
+using Ultimate_Tamagochi.Model;
 using Ultimate_Tamagochi.Model.Interfaces;
 using Ultimate_Tamagochi.Models;
 using Ultimate_Tamagochi.Models.Pets;
@@ -21,7 +23,7 @@ namespace Ultimate_Tamagochi.Core.Functionality
             }
         }
 
-        public static void SelectOption(int option, Player player)
+        public static void SelectOption(int option, Player player, Item[] foodArray, Item[] toyArray, Item[] specialArray)
         {
             int responseItem = 0;
             switch (option)
@@ -72,6 +74,8 @@ namespace Ultimate_Tamagochi.Core.Functionality
                     break;
                 case 5:
                     Console.Clear();
+                    player.AddToInventory(ItemManager.RandomizeItem(foodArray, toyArray, specialArray));
+                    Console.WriteLine(UIConfig.Messages.ItemFound, player.Inventory.Storage[player.Inventory.Storage.Length - 1].Name);
                     break;
                 case 6:
                     Console.WriteLine(UIConfig.Messages.Close);
