@@ -1,0 +1,15 @@
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\bin\Debug\net10.0\Ultimate Tamagochi.exe
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\bin\Debug\net10.0\Ultimate Tamagochi.deps.json
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\bin\Debug\net10.0\Ultimate Tamagochi.runtimeconfig.json
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\bin\Debug\net10.0\Ultimate Tamagochi.dll
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\bin\Debug\net10.0\Ultimate Tamagochi.pdb
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.AssemblyInfoInputs.cache
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.AssemblyInfo.cs
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.csproj.CoreCompileInputs.cache
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.sourcelink.json
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.dll
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\refint\Ultimate Tamagochi.dll
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.pdb
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.genruntimeconfig.cache
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\ref\Ultimate Tamagochi.dll
