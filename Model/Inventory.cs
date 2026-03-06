@@ -20,7 +20,7 @@ namespace Ultimate_Tamagochi.Model
             if (Storage.Length == 0) return;
             for (int i = 0; i < Storage.Length; i++) 
             {
-                    Console.WriteLine($"{i + 1} - {Storage[i].Name}");
+                    Console.WriteLine($"{i + 1} - {Storage[i].Name} ({Storage[i].GetType().Name})");
             }
             Console.WriteLine($"{Storage.Length + 1} - {UIConfig.InGameUIElements.ExitOption}");
         }

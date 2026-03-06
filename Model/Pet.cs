@@ -55,26 +55,28 @@ namespace Ultimate_Tamagochi.Models
                     return true;
                 case (StatePet)1:
                     finalVal = rand.Next(UIConfig.Prompt._minPercentage, UIConfig.Prompt._maxPercentage) >= UIConfig.Values.notPlayChance;
-                    if (!finalVal) Console.WriteLine(UIConfig.Messages.NoPlay);
+                    if (!finalVal) Console.WriteLine(UIConfig.Messages.NoPlay, Name);
                     return finalVal;
                 case (StatePet)2:
                     finalVal = rand.Next(UIConfig.Prompt._minPercentage, UIConfig.Prompt._maxPercentage) >= UIConfig.Values.ignoreChance;
-                    if (!finalVal) Console.WriteLine(UIConfig.Messages.NoResponse);
+                    if (!finalVal) Console.WriteLine(UIConfig.Messages.NoResponse, Name);
                     return finalVal;
                 case (StatePet)3:
                     finalVal = rand.Next(UIConfig.Prompt._minPercentage, UIConfig.Prompt._maxPercentage) >= UIConfig.Values.sudSleepChance;
-                    if (!finalVal) Console.WriteLine(UIConfig.Messages.SudSlept);
+                    if (!finalVal) Console.WriteLine(UIConfig.Messages.SudSlept, Name);
                     return finalVal;
+                case (StatePet)5: 
+                    Console.WriteLine(UIConfig.Messages.Dead);
+                    return false;
                 default: return false;
             }
 
         }
 
-        //-------Maybe ill make all this functions in a new class...
-
         //------ITEM HANDLING-------
         public void HandleItemEffect(Item item)
         {
+            if (!CheckAliveState(item)) return;
             switch (item)
             {
                 case Food foodItem:
@@ -90,6 +92,17 @@ namespace Ultimate_Tamagochi.Models
                     Console.WriteLine(UIConfig.Messages.NothingHappened);
                     break;
             }
+        }
+
+        private bool CheckAliveState(Item item) 
+        {
+            if (!IsAlive)
+            {
+                if (item is Special specialItem && specialItem.Effect == (EffectItem)1) return true;
+                Console.WriteLine(UIConfig.Messages.Dead, Name);
+                return false;
+            }
+            return true;
         }
 
         //Food
@@ -115,7 +128,6 @@ namespace Ultimate_Tamagochi.Models
         private void HandleMealStatChanges() 
         {
             Stats.Hunger = Stats.Hunger + UIConfig.Values.MealHungerValue;
-            State = (int)State < 3 ? (StatePet)((int)State + 1) : (StatePet)2;
             Stats.NutritionalState = Stats.NutritionalState + 1;
         }
         private void HandleSnackStatChanges()
@@ -135,6 +147,7 @@ namespace Ultimate_Tamagochi.Models
         private void HandleToyEffects(Toy toy)
         {
             Console.WriteLine(UIConfig.Messages.Played, Name);
+            State = (StatePet)0;
             Stats.Energy = Stats.Energy - toy.Epicness;
             Stats.Hunger = Stats.Hunger - toy.Epicness;
         }

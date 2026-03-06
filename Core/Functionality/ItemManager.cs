@@ -32,11 +32,11 @@ namespace Tamagochi
             Food rokakaka = new("Rokakaka", 2, true, (TypeFood)2);
 
             //TOYS
-            Toy ball = new("Ball", 40, false, 20);
-            Toy car = new("Car", 30, false, 50);
-            Toy balloon = new("Balloon", 15, true, 80);
-            Toy toyota = new("Toyota Corola", 12, true, 90);
-            Toy albion = new("Albion online", 3, false, 100);
+            Toy ball = new("Ball", 40, false, 10);
+            Toy car = new("Car", 30, false, 15);
+            Toy balloon = new("Balloon", 15, true, 20);
+            Toy toyota = new("Toyota Corola", 12, true, 25);
+            Toy albion = new("Albion online", 3, false, 30);
 
 
             //SPECIALS
@@ -63,7 +63,7 @@ namespace Tamagochi
             if (!IsArrayComplete(foodItems) || !IsArrayComplete(toyItems) || !IsArrayComplete(specialItems)) throw new Exception(UIConfig.Exceptions.PercentageException);
             var rand = new Random();
             Item[] selectedArray = SelectRandomItemArray(foodItems, toyItems, specialItems);
-            int rolledNumber = rand.Next(UIConfig.Prompt._minPercentage, UIConfig.Prompt._maxPercentage);
+            int rolledNumber = rand.Next(UIConfig.Prompt._minPercentage, UIConfig.Prompt._maxPercentage + 1);
             return SearchForItem(selectedArray, rolledNumber);
         }
 
@@ -90,7 +90,7 @@ namespace Tamagochi
         private static Item[] SelectRandomItemArray(Item[] foodItems, Item[] toyItems, Item[] specialItems) 
         {
             var rand = new Random();
-            int rolledNumber = rand.Next(UIConfig.Prompt._minCategoryNum, UIConfig.Prompt._categoryNum); //Be sure to insert into UIConfig.Prompt._categoryNum the same number of itemArrays that you inputed as parameters
+            int rolledNumber = rand.Next(UIConfig.Prompt._minCategoryNum, UIConfig.Prompt._categoryNum + 1); //Be sure to insert into UIConfig.Prompt._categoryNum the same number of itemArrays that you inputed as parameters
             switch (rolledNumber) 
             {
                 case 1: return foodItems;

@@ -32,7 +32,7 @@ namespace Ultimate_Tamagochi.Models.Pets
         //-----INTERFACES-----
         public virtual void IEat(Food food)
         {
-            if ((State == (StatePet)2 || State == (StatePet)3) && !WillAttendPlayer(State)) return;
+            if ((State == (StatePet)2 || State == (StatePet)3 || State == (StatePet)5) && !WillAttendPlayer(State)) return;
             Console.WriteLine(UIConfig.Messages.Eat, Name, food.Name);
             HandleItemEffect(food);
         }
@@ -44,7 +44,7 @@ namespace Ultimate_Tamagochi.Models.Pets
         }
         public virtual void ISleep()
         {
-            if (State == (StatePet)2 && !WillAttendPlayer(State)) return;
+            if ((State == (StatePet)2 || (State == (StatePet)5) && !WillAttendPlayer(State))) return;
             Console.WriteLine(UIConfig.Messages.Sleep, Name);
             SleepStatChanges();
         }

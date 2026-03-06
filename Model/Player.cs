@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using Ultimate_Tamagochi.Model;
+using Ultimate_Tamagochi.Model.Enums;
+using Ultimate_Tamagochi.Model.Items;
 using Ultimate_Tamagochi.UI;
 
 namespace Ultimate_Tamagochi.Models
@@ -19,6 +21,13 @@ namespace Ultimate_Tamagochi.Models
 
         public void AddToInventory(Item item) 
         {
+            //Double check
+            if (Inventory.Storage.Length == UIConfig.Prompt._maxInventorySize) 
+            {
+                Console.Clear();
+                Console.WriteLine(UIConfig.Messages.MaxItems);
+                return;
+            }
             Item[] auxInv = new Item[Inventory.Storage.Length + 1];
             if (Inventory.Storage.Length == 0)
             {
@@ -44,7 +53,6 @@ namespace Ultimate_Tamagochi.Models
                     if (Inventory.Storage.Length == 1)
                     {
                         Inventory.Storage = [];
-                        Console.WriteLine(UIConfig.Messages.ItemErased, item);
                         return;
                     }
                     Item[] auxInv = new Item[Inventory.Storage.Length - 1];
@@ -69,7 +77,6 @@ namespace Ultimate_Tamagochi.Models
 
                     }
                     Inventory.Storage = auxInv;
-                    Console.WriteLine(UIConfig.Messages.ItemErased, item);
                     return;
                 }
             }
@@ -78,9 +85,10 @@ namespace Ultimate_Tamagochi.Models
 
         public void UseItem(Item item) 
         {
-            Console.WriteLine(UIConfig.Messages.ItemUsed, item.Name); 
+            Console.WriteLine(UIConfig.Messages.ItemUsed, item.Name);
             OwnPet.HandleItemEffect(item);
-            if (item.IsConsumible) DeleteFromInventory(item);
+            if (OwnPet.IsAlive) if (item.IsConsumible) DeleteFromInventory(item);
+            
         } 
     }
 }

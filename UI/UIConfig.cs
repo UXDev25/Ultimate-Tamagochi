@@ -14,9 +14,10 @@ namespace Ultimate_Tamagochi.UI
             //UI
             public const int MaxNameChar = 12;
             public const int MinOption = 1;
-            public const int MaxOption = 6; // it is made for the last option to be the EXIT option.
+            public const int MaxOption = 7; // it is made for the last option to be the EXIT option.
             public const int _maxPetOptions = 3;
             public const int _minPetOptions = 1;
+            public const int _maxInventorySize = 13;
 
             //Pet
             public const StatePet _defPetState = (StatePet)0;
@@ -82,7 +83,7 @@ namespace Ultimate_Tamagochi.UI
 
             public const string Divider = "-----------------------------";
             public const string OptionAsk = "What would you like to do?";
-            public const string Options = $"1 - Feed\n2 - Sleep\n3 - Play\n4 - Use item\n5 - Search for items\n6 - {ExitOption}";
+            public const string Options = $"1 - Feed\n2 - Sleep\n3 - Play\n4 - Use item\n5 - Search for items\n6 - EraseItems \n7 - {ExitOption}";
             public const string ExitOption = "Exit";
         }
 
@@ -100,10 +101,10 @@ namespace Ultimate_Tamagochi.UI
 
             //Player/Inventory
             public const string ItemNotFound = "{0} not found on your inventory";
-            public const string ItemErased = "erased {0}";
             public const string ItemUsed = "You used {0} on your pet";
             public const string EmptyInventory = "You have no items";
             public const string ItemFound = "You found a {0}!";
+            public const string MaxItems = "You reached the maximum number of items! Use them to get more space";
 
             //Pet
 
@@ -116,6 +117,7 @@ namespace Ultimate_Tamagochi.UI
             public const string NoPlay = "{0} does not want to play...";
             public const string SudSlept = "What? {0} slept suddenly...";
             public const string NoResponse = "{0} doesn't care about your opinon";
+            public const string Dead = "{0} is dead...";
 
             //-----ITEMS
             public const string WhichItem = "Which Item do you want to use?";
