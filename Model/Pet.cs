@@ -66,7 +66,7 @@ namespace Ultimate_Tamagochi.Models
                     if (!finalVal) Console.WriteLine(UIConfig.Messages.SudSlept, Name);
                     return finalVal;
                 case (StatePet)5: 
-                    Console.WriteLine(UIConfig.Messages.Dead);
+                    Console.WriteLine(UIConfig.Messages.Dead, Name);
                     return false;
                 default: return false;
             }
