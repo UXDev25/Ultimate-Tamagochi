@@ -1,69 +1,53 @@
 ﻿using System;
+using System.Numerics;
+using Ultimate_Tamagochi.Core.Functionality;
 using Ultimate_Tamagochi.Model;
 using Ultimate_Tamagochi.Model.Enums;
 using Ultimate_Tamagochi.Model.Items;
 using Ultimate_Tamagochi.Models;
-using Ultimate_Tamagochi.Models.Pets;
 using Ultimate_Tamagochi.UI;
+using Utils;
 
-namespace tamagochi 
+namespace Tamagochi 
 {
     public static class Program
     {
         public static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            string? responseType;
-            Cat cat = new Cat("Caillou", new Stats(0, 100, 4));
-            Player me = new Player(cat);
+            int responseType = 0;
+            string petName = "";
+            int option = 0;
+            Item[] foodArray = Array.Empty<Item>();
+            Item[] toyArray = Array.Empty<Item>();
+            Item[] specialArray = Array.Empty<Item>();
 
-            Toy ball = new Toy("Ball", 100, false, 20);
-            Food hamburger = new Food("Hamburger", 100, false, (TypeFood)1);
-            Special knife = new Special("Knife", 100, false, (EffectItem)0);
+            ItemManager.InstantiateAllObjects(ref foodArray, ref toyArray, ref specialArray);
 
-
-            Draw(cat);
+            //------MAIN PROGRAM-----
             Console.WriteLine(UIConfig.Messages.WelcomeMsg);
             Console.WriteLine(UIConfig.Messages.Pet);
             Console.WriteLine(UIConfig.Messages.PetList);
-            responseType = Console.ReadLine();
-        }
-        public static void Draw(Pet pet) 
-        {
-            Console.Write(UIConfig.AsciiDrawings.Header, pet.BirthDate, pet.GetType().Name);
-            Console.WriteLine();
-            Console.Write(UIConfig.AsciiDrawings.Tamagochi, GetPetArt(pet));
-            Console.WriteLine();
-            Console.WriteLine(UIConfig.InGameUIElements.Name, pet.Name);
-            Console.WriteLine(UIConfig.InGameUIElements.EmotionalState, pet.State);
-            Console.WriteLine();
-            Console.WriteLine(UIConfig.InGameUIElements.HungerStat, DrawBar(pet.Stats.Hunger),ConsoleColor.Magenta);
-            Console.WriteLine(UIConfig.InGameUIElements.EnergyStat, DrawBar(pet.Stats.Energy), ConsoleColor.Yellow);
-            Console.WriteLine(UIConfig.InGameUIElements.HealthStat, DrawBar(pet.Stats.Health), ConsoleColor.Green);
-            Console.ResetColor();
-        }
-        public static string DrawBar(int stat) 
-        {
-            char[] defaultBar = UIConfig.InGameUIElements.BarOGMold.ToCharArray();
-            int unPercentage = (stat * 20) / 100;
-            for (int i = 0; i < unPercentage; i++) 
+            Tools.CheckInt(ref responseType, UIConfig.Prompt._minPetOptions, UIConfig.Prompt._maxPetOptions, UIConfig.Messages.ErrorPetList);
+            Console.Clear();
+            Console.WriteLine(UIConfig.Messages.NameAsk, UIConfig.Prompt.MaxNameChar);
+            Tools.CheckName(ref petName, UIConfig.Prompt.MaxNameChar, UIConfig.Messages.ErrorName);
+            SelectionManager.SelectPet(responseType, petName);
+            Player player = new(SelectionManager.SelectPet(responseType, petName));
+            Console.Clear();
+            //--START
+            do
             {
-                defaultBar[i] = '#';
-            }
-            string finalBar = new string(defaultBar);
-            return string.Format(UIConfig.InGameUIElements.BarMold, finalBar, stat);
-        }
-        public static string GetPetArt(Pet pet)
-        {
-            switch (pet.State) 
-            {
-                default: return "^‿^";
-                case (StatePet)1: return "╥﹏╥";
-                case (StatePet)2: return "ಠ_ಠ";
-                case (StatePet)3: return "-_- zZ";
-                case (StatePet)4: return "x_x";
-                case (StatePet)5: return "XoX";
-            }
+                UIManager.Draw(player.OwnPet);
+                Console.WriteLine(UIConfig.InGameUIElements.OptionAsk);
+                Console.WriteLine(UIConfig.InGameUIElements.Options);
+                Console.WriteLine();
+                Tools.CheckInt(ref option, UIConfig.Prompt.MinOption, UIConfig.Prompt.MaxOption, UIConfig.Messages.ErrorOption);
+                Console.Clear();
+                SelectionManager.SelectOption(option, player, foodArray, toyArray, specialArray);
+                player.OwnPet.UpdatePetState();
+            } while (option != UIConfig.Prompt.MaxOption);
+            
         }
     }
 }

@@ -11,10 +11,18 @@ namespace Ultimate_Tamagochi.UI
     {
         public static class Prompt
         {
+            //UI
+            public const int MaxNameChar = 12;
+            public const int MinOption = 1;
+            public const int MaxOption = 7; // it is made for the last option to be the EXIT option.
+            public const int _maxPetOptions = 3;
+            public const int _minPetOptions = 1;
+            public const int _maxInventorySize = 13;
+
             //Pet
             public const StatePet _defPetState = (StatePet)0;
             public const bool _defPetAlive = true;
-
+            
             //Stats
             public const int _defMaxStat = 100;
             public const int _defMinStat = 0;
@@ -24,6 +32,8 @@ namespace Ultimate_Tamagochi.UI
             //Random
             public const int _maxPercentage = 100;
             public const int _minPercentage = 0;
+            public const int _minCategoryNum = 1;
+            public const int _categoryNum = 3;
         }
 
         public static class Values
@@ -72,7 +82,9 @@ namespace Ultimate_Tamagochi.UI
             public const string BarOGMold = "--------------------";
 
             public const string Divider = "-----------------------------";
-            public const string Optons = "1 - Eat\n2 - Sleep\n3 - Play\n4 - Play\n5 - Exit";
+            public const string OptionAsk = "What would you like to do?";
+            public const string Options = $"1 - Feed\n2 - Sleep\n3 - Play\n4 - Use item\n5 - Search for items\n6 - EraseItems \n7 - {ExitOption}";
+            public const string ExitOption = "Exit";
         }
 
         public static class Messages
@@ -80,15 +92,19 @@ namespace Ultimate_Tamagochi.UI
             //General
             public const string WelcomeMsg = "------------WELCOME TO ULTIMATE TAMAGOCHI------------";
             public const string Pet = "Congratulations! You are the owner of a new pet! What kind of pet do you want? (NUMBER: 1 TO 3)";
-            public const string PetList = $"- 1:{Pets.Pet1}\n-- 2:{Pets.Pet1}\n- 3:{Pets.Pet3}";
+            public const string PetList = $"- 1:{Pets.Pet1}\n- 2:{Pets.Pet2}\n- 3:{Pets.Pet3}";
             public const string ErrorPetList = "Insert a pet from the list please";
             public const string NameAsk = "Great! What is their name? (LIMIT: 12 CHARACTERS)";
-            public const string ErrorName = "Invalid name, please try again (remember the limit of characters is 12)";
+            public const string ErrorName = "Invalid name, please try again (remember the limit of characters is {0})";
+            public const string ErrorOption = "Invalid option, please select one number from the list";
+            public const string Close = "Ok then, goodbye!";
 
             //Player/Inventory
             public const string ItemNotFound = "{0} not found on your inventory";
-            public const string ItemErased = "erased {0}";
             public const string ItemUsed = "You used {0} on your pet";
+            public const string EmptyInventory = "You have no items";
+            public const string ItemFound = "You found a {0}!";
+            public const string MaxItems = "You reached the maximum number of items! Use them to get more space";
 
             //Pet
 
@@ -101,6 +117,7 @@ namespace Ultimate_Tamagochi.UI
             public const string NoPlay = "{0} does not want to play...";
             public const string SudSlept = "What? {0} slept suddenly...";
             public const string NoResponse = "{0} doesn't care about your opinon";
+            public const string Dead = "{0} is dead...";
 
             //-----ITEMS
             public const string WhichItem = "Which Item do you want to use?";
@@ -122,9 +139,14 @@ namespace Ultimate_Tamagochi.UI
 
             //-----ACTIONS
             public const string Sleep = "{0} went to sleep... It waked up with a lot of energy! Maybe a little breakfast will do good on them...";
-
             public const string Play = "{0} Played with {1}, ";
             public const string Played = "it was very epic, {0} is so happy! But very tired...";
+        }
+
+        public class Exceptions 
+        {
+            public const string PercentageException = "Error, the sumatory of all the item percentages of each individual array has to be equal to 100";
+            public const string ItemArrayNumException = "Error, you must assign to UIConfig.Prompt._categoryNum the same number of itemArrays categories that exist";
         }
     }
 }

@@ -13,3 +13,7 @@ C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\ref
 C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.pdb
 C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.genruntimeconfig.cache
 C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\ref\Ultimate Tamagochi.dll
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate Tamagochi.csproj.AssemblyReference.cache
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\bin\Debug\net10.0\Utils.dll
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\bin\Debug\net10.0\Utils.pdb
+C:\Users\isard\Desktop\Programació\POO\Ultimate Tamagochi\obj\Debug\net10.0\Ultimate.512B7E18.Up2Date

@@ -8,7 +8,7 @@ namespace Ultimate_Tamagochi.Model.Items
     public class Special : Item
     {
         public EffectItem Effect { get; set; }
-        public Special(string name, float spawnChance, bool isConsumible, EffectItem effect)
+        public Special(string name, int spawnChance, bool isConsumible, EffectItem effect)
         {
             Name = name;
             SpawnChance = spawnChance;
